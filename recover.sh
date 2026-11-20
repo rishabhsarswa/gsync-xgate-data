@@ -17,8 +17,8 @@ function rec-raw()
 	fname="$1"
 	
 	acrypter decrypt cry15360 "acrypt/raw/$fname.tar.xz.acrypt" "$grecover/raw/$fname.tar.xz"
-	tar -xvf "$grecover/$fname.tar.xz" -C "$grecover/raw"
-	rm "$grecover/$fname.tar.xz"
+	tar -xvf "$grecover/raw/$fname.tar.xz" -C "$grecover/raw"
+	rm "$grecover/raw/$fname.tar.xz"
 
 
 }
