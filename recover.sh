@@ -12,10 +12,9 @@ function rec-raw()
 {
 	
 	pwd
-	echo "$1 $2"
+	echo "$1"
 	
 	fname="$1"
-	fpath="$2"
 	
 	acrypter decrypt cry15360 "acrypt/raw/$fname.tar.xz.acrypt" "$grecover/raw/$fname.tar.xz"
 	tar -xvf "$grecover/$fname.tar.xz" -C "$grecover/raw"
